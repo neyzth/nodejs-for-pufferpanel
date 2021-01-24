@@ -1,0 +1,28 @@
+{
+    "type": "Execute une application node.js",
+    "data": {
+        "nom": {
+            "type": "string",
+            "desc": "Choisir le fichier à éxécuter",
+            "display": "Nom du fichier",
+            "required": true,
+            "value": "index.js",
+            "userEdit": true
+        }
+    },
+    "display": "node.js",
+    "run": {
+        "command": "nodemon ${nom}",
+        "environmentVars": {},
+        "pre": [],
+        "post": [],
+        "stopCode": null
+    },
+    "supportedEnvironments": [
+        {
+            "type": "standard"
+        }
+    ],
+    "name": "node.js",
+    "install": []
+}
